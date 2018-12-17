@@ -10,4 +10,4 @@ RUN gem install sinatra
 ADD app /app
 #RUN locale-gen C.UTF-8 && /usr/sbin/update-locale LANG=C.UTF-8
 EXPOSE 4567
-CMD ["ruby", "/app/app.rb -p 4567"]]
+CMD ["ruby", "/app/app.rb","-o","0.0.0.0","-p","4567"]
